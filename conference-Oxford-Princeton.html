@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oxford–Princeton Conference — Schedule</title>
+  <meta name="description" content="Conference schedule.">
+  <meta property="og:title" content="Oxford–Princeton Conference — Schedule">
+  <meta property="og:description" content="Conference schedule.">
+  <meta property="og:type" content="website">
+  <style>
+    /* ====== Base ====== */
+    :root{
+      --bg: #ffffff;
+      --fg: #111111;
+      --muted:#6b7280;
+      --accent:#1f2937;
+      --border:#e5e7eb;
+      --card:#fafafa;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg:#0b0c0e;
+        --fg:#e5e7eb;
+        --muted:#9ca3af;
+        --accent:#d1d5db;
+        --border:#1f2937;
+        --card:#111317;
+      }
+    }
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background:var(--bg);
+      color:var(--fg);
+      line-height:1.6;
+    }
+    .container{max-width:920px; margin:0 auto; padding: clamp(16px, 2vw, 24px);}
+    a{color:inherit}
+    /* ====== Header ====== */
+    header{
+      border-bottom:1px solid var(--border);
+      background:linear-gradient(180deg, rgba(0,0,0,0.06), transparent);
+    }
+    .hero{
+      padding: 48px 0 24px;
+    }
+    .kicker{
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      font-size:12px;
+      color:var(--muted);
+      margin-bottom:8px;
+    }
+    h1{font-size: clamp(28px, 5vw, 40px); line-height:1.1; margin:0 0 8px;}
+    .meta{color:var(--muted); font-size: 15px;}
+    .meta span{margin-right:16px;}
+    /* ====== Card ====== */
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:12px;
+      padding: clamp(16px, 2vw, 24px);
+      box-shadow: 0 1px 0 rgba(0,0,0,.03);
+    }
+    /* ====== Schedule ====== */
+    .schedule{margin: 24px 0 64px;}
+    .day{margin-bottom:28px;}
+    .day h2{
+      font-size: clamp(18px, 3vw, 22px);
+      margin: 0 0 12px;
+      padding-bottom:8px;
+      border-bottom:1px dashed var(--border);
+    }
+    .slot{
+      display:grid;
+      grid-template-columns: 100px 1fr;
+      gap: 16px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+      align-items: start;
+    }
+    .slot:last-child{border-bottom:none;}
+    .time{
+      font-variant-numeric: tabular-nums;
+      font-weight:600;
+      color:var(--accent);
+      white-space:nowrap;
+    }
+    .title{font-weight:600;}
+    .desc{color:var(--muted); margin-top:4px;}
+    .speakers{margin-top:6px; font-size: 0.95em;}
+    .badge{
+      display:inline-block;
+      border:1px solid var(--border);
+      border-radius:999px;
+      padding:2px 8px;
+      font-size:12px;
+      color:var(--muted);
+      margin-left:8px;
+    }
+    /* ====== Footer ====== */
+    footer{
+      border-top:1px solid var(--border);
+      color:var(--muted);
+      font-size:14px;
+      padding:16px 0 48px;
+    }
+    /* Print */
+    @media print{
+      header, footer{display:none}
+      .card{border:none; box-shadow:none; background:transparent; padding:0}
+      .slot{page-break-inside: avoid;}
+    }
+  </style>
+
+  <!-- Structured data (optional, helps SEO for events) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Oxford–Princeton Workshop 2025",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "startDate": "2025-09-01T09:00:00+01:00",
+    "endDate": "2025-09-01T18:00:00+01:00",
+    "location": {
+      "@type": "Place",
+      "name": "Example Venue",
+      "address": "Oxford, United Kingdom"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "University of Oxford"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container hero">
+      <div class="kicker">Conference</div>
+      <h1>Oxford–Princeton Conference 2025</h1>
+      <div class="meta">
+        <span>📅 10 & 11 October 2025</span>
+        <span>📍 Oxford, United Kingdom</span>
+      </div>
+      <div class="meta">
+        <span>⭐️ 10th is at Mathematical Institute (L3) <a href="https://maps.app.goo.gl/8oEaFLLKbxAPJ5aJ6">(Google Maps)</a> </span>
+      </div>
+      <div class="meta">
+        <span>⭐️ 11th is at Oxford-Man Institute for Quantitative Finance (3rd floor) <a href="https://maps.app.goo.gl/fG4uPk8GqVNb5X4m8">(Google Maps)</a> </span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card schedule">
+      <div class="day">
+        <h2>10th October @ L3 Mathematical Institue, Oxford</h2>
+
+        <div class="slot" itemscope itemtype="https://schema.org/Event">
+          <div class="time">08:30–09:00</div>
+          <div>
+            <div class="title" itemprop="name">Registration & Coffee <span class="badge">Arrival</span></div>
+          </div>
+        </div>
+
+        <div class="slot" itemscope itemtype="https://schema.org/Event">
+          <div class="time">09:00–09:05</div>
+          <div>
+            <div class="title">Welcome Remarks</div>
+            <div class="speakers">Leandro (Oxford) and Ludo (Princeton)</div>
+          </div>
+        </div>
+
+        <div class="slot" itemscope itemtype="https://schema.org/Event">
+          <div class="time">09:05–09:35</div>
+          <div>
+            <div class="title">Title: TBA</div>
+            <div class="speakers">Justin Sirignano (Oxford)</div>
+          </div>
+        </div>
+
+        <div class="slot" itemscope itemtype="https://schema.org/Event">
+          <div class="time">09:40–10:00</div>
+          <div>
+            <div class="title">Title: Mean-Field Generalisation Bounds for Learning Controls in Stochastic Environments</div>
+            <div class="speakers">Boris Baros (Oxford)</div>
+          </div>
+        </div>
+
+        <div class="slot" itemscope itemtype="https://schema.org/Event">
+          <div class="time">10:05–10:35</div>
+          <div>
+            <div class="title">Title: TBA</div>
+            <div class="speakers">Ludovic Tangpi (Princeton)</div>
+          </div>
+        </div>
+        
+        
+        <div class="slot">
+          <div class="time">10:40–11:10</div>
+          <div>
+            <div class="title">Coffee & Pastries <span class="badge">Break</span></div>
+          </div>
+        </div>
+
+        <div class="slot" itemscope itemtype="https://schema.org/Event">
+          <div class="time">11:15–11:35</div>
+          <div>
+            <div class="title">Title: The weak formulation for McKean Vlasov control: Conditioned interaction and the Pontryagin principle</div>
+            <div class="speakers">Kaiwen Zhang (Princeton)</div>
+          </div>
+        </div>
+
+
+        <div class="slot" itemscope itemtype="https://schema.org/Event">
+          <div class="time">11:40–12:10</div>
+          <div>
+            <div class="title">Title: TBA</div>
+            <div class="speakers">Nazem Khan (Oxford)</div>
+          </div>
+        </div>
+
+
+        
+        <div class="slot">
+          <div class="time">12:15–13:45</div>
+          <div>
+            <div class="title">Lunch (just outside of L3) <span class="badge">Break</span></div>
+          </div>
+        </div>
+
+        <div class="slot" itemscope itemtype="https://schema.org/Event">
+          <div class="time">13:50–14:10</div>
+          <div>
+            <div class="title">Title: Equilibrium between Takers and Makers of Liquidity</div>
+            <div class="speakers">Adrien Mathieu (Oxford)</div>
+          </div>
+        </div>
+
+        <div class="slot" itemscope itemtype="https://schema.org/Event">
+          <div class="time">14:15–14:45</div>
+          <div>
+            <div class="title">Title: TBA</div>
+            <div class="speakers">Ronnie Sircar (Princeton)</div>
+          </div>
+        </div>
+        
+                
+        <div class="slot" itemscope itemtype="https://schema.org/Event">
+          <div class="time">14:50–15:10</div>
+          <div>
+            <div class="title">Title: Optimal Trading under Instantaneous and Persistent Price Impact, Predictable Returns and Multiscale Stochastic Volatility</div>
+            <div class="speakers">Iosif Zimbidis (Princeton)</div>
+          </div>
+        </div>
+
+
+      <div class="slot">
+          <div class="time">15:15–15:45</div>
+          <div>
+            <div class="title">Coffee & Pastries <span class="badge">Break</span></div>
+          </div>
+        </div>
+        
+
+        <div class="slot" itemscope itemtype="https://schema.org/Event">
+          <div class="time">15:50–16:10</div>
+          <div>
+            <div class="title">Title: Do Flickering Quotes Move Markets?</div>
+            <div class="speakers">Rob Graumans (Oxford)</div>
+          </div>
+        </div>
+       
+        
+         <div class="slot" itemscope itemtype="https://schema.org/Event">
+          <div class="time">16:15–16:35</div>
+          <div>
+            <div class="title">Title: TBA</div>
+            <div class="speakers">Fayçal Drissi (Oxford)</div>
+          </div>
+        </div>       
+        
+         <div class="slot" itemscope itemtype="https://schema.org/Event">
+          <div class="time">16:40–17:00</div>
+          <div>
+            <div class="title">Title: Fare Game: A Mean Field Model of Stochastic Intensity Control in Dynamic Ticket Pricing</div>
+            <div class="speakers">Burak Aydin (Princeton)</div>
+          </div>
+        </div>       
+        
+        <div class="slot" itemscope itemtype="https://schema.org/Event">
+          <div class="time">17:05–17:25</div>
+          <div>
+            <div class="title">Title: TBA</div>
+            <div class="speakers">Gerardo Duran-Martin (Oxford)</div>
+          </div>
+        </div>       
+        
+        
+                
+        <div class="slot">
+          <div class="time">17:30</div>
+          <div>
+            <div class="title">Closing Remarks</div>
+            <div class="speakers">Free evening (conference dinner will be tomorrow)</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <section class="card schedule">
+      <div class="day">
+        <h2>11th October @ Eagle House, Oxford-Man Institute for Quantitative Finance (3rd floor: AHL Lecture Theatre)</h2>
+
+        <div class="slot">
+          <div class="time">8:30–9:00</div>
+          <div>
+            <div class="title">Coffee & Pastries <span class="badge">Break</span></div>
+          </div>
+        </div>
+
+      <div class="slot" itemscope itemtype="https://schema.org/Event">
+          <div class="time">9:05–9:35</div>
+          <div>
+            <div class="title">Title: TBA</div>
+            <div class="speakers">Emma Hubert (Princeton)</div>
+          </div>
+        </div>
+        
+        <div class="slot" itemscope itemtype="https://schema.org/Event">
+          <div class="time">9:40–10:00</div>
+          <div>
+            <div class="title">Title: Learning Markov Perfect Equilibria in Discrete Games</div>
+            <div class="speakers">Felix Hoefer (Princeton)</div>
+          </div>
+        </div>
+
+      <div class="slot" itemscope itemtype="https://schema.org/Event">
+          <div class="time">10:05–10:25</div>
+          <div>
+            <div class="title">Title: Optimal Dynamic Fees in Automated Market Makers</div>
+            <div class="speakers">Leonardo Baggiani (Oxford)</div>
+          </div>
+        </div>
+
+        <div class="slot">
+          <div class="time">10:30–11:00</div>
+          <div>
+            <div class="title">Coffee & Pastries <span class="badge">Break</span></div>
+          </div>
+        </div>
+
+      <div class="slot" itemscope itemtype="https://schema.org/Event">
+          <div class="time">11:05–11:25</div>
+          <div>
+            <div class="title">Title: TBA</div>
+            <div class="speakers">STUDENT-TBC (Princeton)</div>
+          </div>
+        </div>
+
+
+        <div class="slot" itemscope itemtype="https://schema.org/Event">
+          <div class="time">11:30–12:00</div>
+          <div>
+            <div class="title">Title: TBA</div>
+            <div class="speakers">Ruixun Zhang (Oxford)</div>
+          </div>
+        </div>
+
+
+        
+        <div class="slot">
+          <div class="time">12:05–13:45</div>
+          <div>
+            <div class="title">Lunch (just outside of L3) <span class="badge">Break</span></div>
+          </div>
+        </div>
+
+        <div class="slot" itemscope itemtype="https://schema.org/Event">
+          <div class="time">13:50–14:20</div>
+          <div>
+            <div class="title">Title: TBA</div>
+            <div class="speakers">Rene Carmona (Princeton)</div>
+          </div>
+        </div>
+
+        <div class="slot" itemscope itemtype="https://schema.org/Event">
+          <div class="time">14:25–14:45</div>
+          <div>
+            <div class="title">Title: Stochastic Optimal Control and Signatures</div>
+            <div class="speakers">Alif Aqsha (Oxford)</div>
+          </div>
+        </div>
+        
+        
+      <div class="slot">
+          <div class="time">14:50–15:20</div>
+          <div>
+            <div class="title">Coffee & Pastries <span class="badge">Break</span></div>
+          </div>
+        </div>
+        
+        
+        <div class="slot" itemscope itemtype="https://schema.org/Event">
+          <div class="time">15:25–15:45</div>
+          <div>
+            <div class="title">Title: TBA</div>
+            <div class="speakers">STUDENT-TBC (Princeton)</div>
+          </div>
+        </div>
+
+
+        <div class="slot" itemscope itemtype="https://schema.org/Event">
+          <div class="time">15:50–16:10</div>
+          <div>
+            <div class="title">Title: Distributed games with jumps: An alpha-potential game approach</div>
+            <div class="speakers">Xinyu Li (Oxford)</div>
+          </div>
+        </div>
+       
+        
+         <div class="slot" itemscope itemtype="https://schema.org/Event">
+          <div class="time">16:15–16:35</div>
+          <div>
+            <div class="title">Title: Neural Actor-Critic Methods for Hamilton–Jacobi–Bellman PDEs: Asymptotic Analysis and Numerical Studies</div>
+            <div class="speakers">Jackson Hebner (Oxford)</div>
+          </div>
+        </div>       
+        
+        <div class="slot" itemscope itemtype="https://schema.org/Event">
+          <div class="time">16:40–17:00</div>
+          <div>
+            <div class="title">Title: TBA</div>
+            <div class="speakers">STUDENT-TBC (Princeton)</div>
+          </div>
+        </div>
+        
+                
+        <div class="slot">
+          <div class="time">17:05</div>
+          <div>
+            <div class="title">Closing Remarks</div>
+          </div>
+        </div>
+
+
+        
+      <div class="slot">
+          <div class="time">18:00–21:00</div>
+          <div>
+            <div class="title">Conference dinner @Balliol by invitation only: please check your email to see if you have a spot for the dinner; if in doubt please talk to Leandro/Ludo <span class="badge">Drinks reception and dinner</span></div>
+            <div class="title">Balliol College: dinner drinks 18:00, and dinner from 18:30</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+
+  <footer>
+    <div class="container">
+      © <span id="y"></span> Leandro Sánchez-Betancourt • Contact: sanchezbetan@maths.ox.ac.uk
+    </div>
+  </footer>
+
+  <script>
+    // Update year automatically
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
