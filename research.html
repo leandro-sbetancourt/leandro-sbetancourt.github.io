@@ -44,7 +44,38 @@
 
    <!-- Local styles -->
    <link rel="stylesheet" href="css/main.css">
+    
+<style>
+  /* BibTeX toggle */
+  details.bibtex { 
+    display: inline-block;        /* keeps the toggle on the same line as the pub */
+    margin-left: 8px;
+  }
+  details.bibtex > summary {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    user-select: none;
+  }
+  /* Hide default marker */
+  details.bibtex > summary::-webkit-details-marker { display: none; }
 
+  /* Font Awesome icons (you already load FA5) */
+  details.bibtex .fa-minus-square { display: none; }
+  details.bibtex[open] .fa-plus-square { display: none; }
+  details.bibtex[open] .fa-minus-square { display: inline-block; }
+
+  /* BibTeX block style */
+  details.bibtex > pre {
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 8px 0 0 0;
+    white-space: pre-wrap;        /* wraps long lines nicely */
+  }
+</style>
 </head>
 
 <body>
@@ -67,82 +98,450 @@
 
             <h5>Published/accepted journal papers</h5>
             <ol reversed>
+                
+                
                 <li>Cartea, Á., Jaimungal, S., & Sánchez-Betancourt, L.  (2025+).  Nash Equilibrium between Brokers and Traders. 
-                <br><em><u>Finance and Stochastics</u></em>, to appear. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4894757">Link</a>.</br>  </li>
+                <br><em><u>Finance and Stochastics</u></em>, to appear. 
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4894757" style="color:#000"><i class="fas fa-link"></i></a> 
+<details class="bibtex"><summary><i class="far fa-plus-square"></i><i class="far fa-minus-square"></i></summary><pre>
+@article{cartea2025nash,
+title={Nash equilibrium between brokers and traders},
+author={Cartea, {\'A}lvaro and Jaimungal, Sebastian and S{\'a}nchez-Betancourt, Leandro},
+journal={Finance and Stochastics, to appear, arXiv:2407.10561},
+year={2025+}
+}
+</pre></details></br></li>
+                
+                
                 <li>Boyce, R., Herdegen, M., & Sánchez-Betancourt, L.  (2025).  Market Making with Exogenous Competition. 
-                <br><em><u>SIAM Journal on Financial Mathematics</u></em> </em> <b>16</b> (2), 692-706. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4904510">Link</a>.  </br>   </li>
+                <br><em><u>SIAM Journal on Financial Mathematics</u></em> </em> <b>16</b> (2), 692-706. 
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4904510" style="color:#000"><i class="fas fa-link"></i></a> 
+                <a href="https://github.com/leandro-sbetancourt/mm-exogenous-competition" style="color:#000"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/leandro-sbetancourt/gym-mm-pooled-competition" style="color:#000"><i class="fab fa-github"></i></a>
+<details class="bibtex"><summary><i class="far fa-plus-square"></i><i class="far fa-minus-square"></i></summary><pre>
+@article{boyce2025market,
+author = {Boyce, Robert and Herdegen, Martin and S\'{a}nchez-Betancourt, Leandro},
+title = {Market Making with Exogenous Competition},
+journal = {SIAM Journal on Financial Mathematics},
+volume = {16},
+number = {2},
+pages = {692-706},
+year = {2025}
+}
+</pre></details></br></li>
+                
                 <li> Duran-Martin, G., Sánchez-Betancourt, L.,  Shestopaloff, A., & Murphy, K. P. (2025). A unifying framework for generalised Bayesian online learning in non-stationary environments. 
-                <br><em><u>Transactions on Machine Learning Research</u></em>. <a href="https://arxiv.org/abs/2411.10153">Link</a>. <br>  </li>  
+                <br><em><u>Transactions on Machine Learning Research</u></em>. 
+                <a href="https://arxiv.org/abs/2411.10153" style="color:#000"><i class="fas fa-link"></i></a>
+                <a href="https://github.com/gerdm/BONE" style="color:#000"><i class="fab fa-github"></i></a>
+<details class="bibtex"><summary><i class="far fa-plus-square"></i><i class="far fa-minus-square"></i></summary><pre>
+@article{duran2025unifying,
+title={A unifying framework for generalised Bayesian online learning in non-stationary environments},
+author={Gerardo Duran-Martin and Leandro S{\'a}nchez-Betancourt and Alex Shestopaloff and Kevin Patrick Murphy},
+journal={Transactions on Machine Learning Research},
+issn={2835-8856},
+year={2025},
+url={https://openreview.net/forum?id=osesw2V10u}
+}
+</pre></details></br></li>                
+                
+                
                 <li>Bergault P., & Sánchez-Betancourt, L. (2025).  A Mean Field Game between Informed Traders and a Broker.  
-                <br><em><u>SIAM Journal on Financial Mathematics</u></em> </em> <b>16</b> (2), 358-388. <a href="https://ssrn.com/abstract=4691010">Link</a>. </br>  </li>
+                <br><em><u>SIAM Journal on Financial Mathematics</u></em> </em> <b>16</b> (2), 358-388. 
+                <a href="https://ssrn.com/abstract=4691010" style="color:#000"><i class="fas fa-link"></i></a>
+<details class="bibtex"><summary><i class="far fa-plus-square"></i><i class="far fa-minus-square"></i></summary><pre>
+@article{bergault2025mean,
+  title={A mean field game between informed traders and a broker},
+  author={Bergault, Philippe and S{\'a}nchez-Betancourt, Leandro},
+  journal={SIAM Journal on Financial Mathematics},
+  volume={16},
+  number={2},
+  pages={358--388},
+  year={2025},
+  publisher={SIAM}
+}
+</pre></details></br></li>        
+                
                 <li>Cartea, Á., & Sánchez-Betancourt, L.  (2025).  Brokers and Informed Traders: Dealing with Toxic Flow and Extracting Trading Signals. 
-                <br><em><u>SIAM Journal on Financial Mathematics</u></em> <b>16</b> (2), 243-270. <a href="https://ssrn.com/abstract=4265814">Link</a>. </br>  </li>
+                <br><em><u>SIAM Journal on Financial Mathematics</u></em> <b>16</b> (2), 243-270. 
+                <a href="https://ssrn.com/abstract=4265814" style="color:#000"><i class="fas fa-link"></i></a>
+<details class="bibtex"><summary><i class="far fa-plus-square"></i><i class="far fa-minus-square"></i></summary><pre>
+@article{cartea2025brokers,
+  title={Brokers and informed traders: dealing with toxic flow and extracting trading signals},
+  author={Cartea, {\'A}lvaro and S{\'a}nchez-Betancourt, Leandro},
+  journal={SIAM Journal on Financial Mathematics},
+  volume={16},
+  number={2},
+  pages={243--270},
+  year={2025},
+  publisher={SIAM}
+}
+</pre></details></br></li>    
+                
                 <li>Cartea, Á., Cohen, S. N., Graumans, R., Labyad, S., Sánchez-Betancourt, L., & van Veldhuijzen, L. (2024).  Statistical Predictions of Trading Strategies in Electronic Markets. 
-                <br><em><u>Journal of Financial Econometrics</u></em> <b>23</b> (2), nbae025 <a href="https://ssrn.com/abstract=4442770">Link</a>.  </br> </li>
+                <br><em><u>Journal of Financial Econometrics</u></em> <b>23</b> (2), nbae025. 
+                <a href="https://ssrn.com/abstract=4442770" style="color:#000"><i class="fas fa-link"></i></a>
+<details class="bibtex"><summary><i class="far fa-plus-square"></i><i class="far fa-minus-square"></i></summary><pre>
+@article{cartea2025statistical,
+  title={Statistical predictions of trading strategies in electronic markets},
+  author={Cartea, {\'A}lvaro and Cohen, Samuel N and Graumans, Robert and Labyad, Saad and S{\'a}nchez-Betancourt, Leandro and van Veldhuijzen, Leon},
+  journal={Journal of Financial Econometrics},
+  volume={23},
+  number={2},
+  pages={nbae025},
+  year={2025},
+  publisher={Oxford University Press}
+}
+</pre></details></br></li>  
+               
+               
                <li>Hughston, L. P., & Sánchez-Betancourt, L. (2024).  Valuation of a Financial Claim Contingent on the Outcome of a Quantum Measurement. 
-               <br><em><u>Journal of Physics A: Mathematical and Theoretical</u></em>  <b>57</b> (28), 285302 <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4451933">Link</a>.  </br>  </li>  
+               <br><em><u>Journal of Physics A: Mathematical and Theoretical</u></em>  <b>57</b> (28), 285302. 
+               <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4451933" style="color:#000"><i class="fas fa-link"></i></a>
+<details class="bibtex"><summary><i class="far fa-plus-square"></i><i class="far fa-minus-square"></i></summary><pre>
+@article{HS-23-VoaFCCotOoaQM,
+  title={Valuation of a Financial Claim Contingent on the Outcome of a Quantum Measurement},
+  author={Hughston, Lane P and S{\'a}nchez-Betancourt, Leandro},
+  journal={Journal of Physics A: Mathematical and Theoretical},
+  year={2024}
+}
+</pre></details></br></li>  
+               
+               
                <li>Bouzianis, G., Hughston, L. P., & Sánchez-Betancourt, L. (2024).  Information-based Trading.  
-               <br><em><u>International Journal of Theoretical and Applied Finance</u></em> <b>27</b> (3,4), 2350030:1-33. <a href="https://arxiv.org/abs/2201.08875">Link</a>. </br> 
+               <br><em><u>International Journal of Theoretical and Applied Finance</u></em> <b>27</b> (3,4), 2350030:1-33. 
+               <a href="https://arxiv.org/abs/2201.08875" style="color:#000"><i class="fas fa-link"></i></a>
+<details class="bibtex"><summary><i class="far fa-plus-square"></i><i class="far fa-minus-square"></i></summary><pre>
+@article{BHS-22-IbT,
+  title={Information-based trading},
+  author={Bouzianis, George and Hughston, Lane P and S{\'a}nchez-Betancourt, Leandro},
+  journal={International Journal of Theoretical and Applied Finance},
+  volume={27},
+  number={03n04},
+  pages={2350030},
+  year={2024},
+  publisher={World Scientific}
+}
+</pre></details></br></li>
+               
+               
                <li>Jaimungal, S., Pesenti, S. M., & Sánchez-Betancourt, L. (2024).  Minimal Kullback-Leibler Divergence for Constrained Levy-Ito Processes. 
-               <br><em><u>SIAM Journal on Control and Optimization</u></em> <b>60</b> (2), 982-1005.  <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4149871">Link</a>. </br> </li>  
+               <br><em><u>SIAM Journal on Control and Optimization</u></em> <b>60</b> (2), 982-1005.  
+               <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4149871" style="color:#000"><i class="fas fa-link"></i></a>
+<details class="bibtex"><summary><i class="far fa-plus-square"></i><i class="far fa-minus-square"></i></summary><pre>
+@article{jaimungal2024minimal,
+  title={Minimal kullback--leibler divergence for constrained l{\'e}vy--it{\^o} processes},
+  author={Jaimungal, Sebastian and Pesenti, Silvana M and S{\'a}nchez-Betancourt, Leandro},
+  journal={SIAM Journal on Control and Optimization},
+  volume={62},
+  number={2},
+  pages={982--1005},
+  year={2024},
+  publisher={SIAM}
+}
+</pre></details></br></li>
+               
+               
                <li>Bellani, C., Brigo, D., Pakkanen, M. S., & Sánchez-Betancourt, L. (2023).  Price Impact without Averaging. 
-               <br><em><u>Applied Mathematical Finance</u></em> <b>30</b> (4), 175-206. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4012167">Link</a>.  <a href="https://github.com/claudio-ICL/napiod">Code</a>. </br> </li>
+               <br><em><u>Applied Mathematical Finance</u></em> <b>30</b> (4), 175-206. 
+               <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4012167" style="color:#000"><i class="fas fa-link"></i></a>
+               <a href="https://github.com/claudio-ICL/napiod" style="color:#000"><i class="fab fa-github"></i></a>
+<details class="bibtex"><summary><i class="far fa-plus-square"></i><i class="far fa-minus-square"></i></summary><pre>
+@article{bellani2023price,
+  title={Price Impact Without Averaging},
+  author={Bellani, Claudio and Brigo, Damiano and Pakkanen, Mikko S and S{\'a}nchez-Betancourt, Leandro},
+  journal={Applied Mathematical Finance},
+  volume={30},
+  number={4},
+  pages={175--206},
+  year={2023},
+  publisher={Taylor \& Francis}
+}
+</pre></details></br></li>
+               
+               
                <li>Cartea, Á., & Sánchez-Betancourt, L. (2023).  Optimal Execution with Stochastic Delay. 
-               <br><em><u>Finance and Stochastics</u></em>  <b>27</b> (1), 1-47 <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3812324">Link</a>. </br> 
+               <br><em><u>Finance and Stochastics</u></em>  <b>27</b> (1), 1-47. 
+               <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3812324" style="color:#000"><i class="fas fa-link"></i></a> 
+<details class="bibtex"><summary><i class="far fa-plus-square"></i><i class="far fa-minus-square"></i></summary><pre>
+@article{cartea2023optimal,
+  title={Optimal execution with stochastic delay},
+  author={Cartea, {\'A}lvaro and S{\'a}nchez-Betancourt, Leandro},
+  journal={Finance and Stochastics},
+  volume={27},
+  number={1},
+  pages={1--47},
+  year={2023},
+  publisher={Springer}
+}
+</pre></details></br></li>
+               
+               
                <li>Cartea, Á., Perez Arribas, I., & Sánchez-Betancourt, L. (2022). Double-Execution Strategies using Path Signatures. 
-               <br><em><u>SIAM Journal on Financial Mathematics</u></em> <b>13</b> (4), 1379–1417 <a href="https://ssrn.com/abstract=3562251">Link</a>. <a href="https://github.com/imanolperez/optimal-double-execution">Code</a>.</br> </li>
+               <br><em><u>SIAM Journal on Financial Mathematics</u></em> <b>13</b> (4), 1379–1417. 
+               <a href="https://ssrn.com/abstract=3562251" style="color:#000"><i class="fas fa-link"></i></a>
+               <a href="https://github.com/imanolperez/optimal-double-execution" style="color:#000"><i class="fab fa-github"></i></a>
+<details class="bibtex"><summary><i class="far fa-plus-square"></i><i class="far fa-minus-square"></i></summary><pre>
+@article{cartea2022double,
+  title={Double-execution strategies using path signatures},
+  author={Cartea, {\'A}lvaro and Arribas, Imanol P{\'e}rez and S{\'a}nchez-Betancourt, Leandro},
+  journal={SIAM Journal on Financial Mathematics},
+  volume={13},
+  number={4},
+  pages={1379--1417},
+  year={2022},
+  publisher={SIAM}
+}
+</pre></details></br></li>
+               
+               
                <li>Cartea, Á., Jaimungal, S., & Sánchez-Betancourt, L. (2021). Latency and Liquidity Risk. 
-               <br><em><u>International Journal of Theoretical and Applied Finance</u></em> <b>24</b> (06n07), 1-37. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3433739">Link</a>.</br></li>
+               <br><em><u>International Journal of Theoretical and Applied Finance</u></em> <b>24</b> (06n07), 1-37. 
+               <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3433739" style="color:#000"><i class="fas fa-link"></i></a>
+<details class="bibtex"><summary><i class="far fa-plus-square"></i><i class="far fa-minus-square"></i></summary><pre>
+@article{cartea2021latency,
+  title={Latency and liquidity risk},
+  author={Cartea, {\'A}lvaro and Jaimungal, Sebastian and S{\'a}nchez-Betancourt, Leandro},
+  journal={International Journal of Theoretical and Applied Finance},
+  volume={24},
+  number={06n07},
+  pages={2150035},
+  year={2021},
+  publisher={World Scientific}
+}
+</pre></details></br></li>
+               
+               
                <li>Forde, M., Sánchez-Betancourt, L., & Smith, B. (2021). Optimal Trade Execution for Gaussian Signals with Power-law Resilience. 
-               <br><em><u>Quantitative Finance</u></em> <b>22</b> (3), 585-596. <a href="https://doi.org/10.1080/14697688.2021.1950919">Link</a>.</br></li>
+               <br><em><u>Quantitative Finance</u></em> <b>22</b> (3), 585-596. 
+               <a href="https://doi.org/10.1080/14697688.2021.1950919" style="color:#000"><i class="fas fa-link"></i></a>
+<details class="bibtex"><summary><i class="far fa-plus-square"></i><i class="far fa-minus-square"></i></summary><pre>
+@article{forde2022optimal,
+  title={Optimal trade execution for Gaussian signals with power-law resilience},
+  author={Forde, Martin and S{\'a}nchez-Betancourt, Leandro and Smith, Benjamin},
+  journal={Quantitative Finance},
+  volume={22},
+  number={3},
+  pages={585--596},
+  year={2022},
+  publisher={Taylor \& Francis}
+}
+</pre></details></br></li>
+               
+               
                <li>Bouzianis, G., Hughston, L. P., Jaimungal, S., & Sánchez-Betancourt, L. (2021). Lévy-Ito Models in Finance. 
-               <br><em><u>Probability Surveys</u></em> <b>18</b>, 132-178. <a href="https://arxiv.org/abs/1907.08499">Link</a>.</br></li>
+               <br><em><u>Probability Surveys</u></em> <b>18</b>, 132-178. 
+               <a href="https://arxiv.org/abs/1907.08499" style="color:#000"><i class="fas fa-link"></i></a>
+<details class="bibtex"><summary><i class="far fa-plus-square"></i><i class="far fa-minus-square"></i></summary><pre>
+@article{bouzianis2021levy,
+  title={L{\'e}vy-Ito models in finance},
+  author={Bouzianis, George and Hughston, Lane P and Jaimungal, Sebastian and S{\'a}nchez-Betancourt, Leandro},
+  journal={Probability Surveys},
+  volume={18},
+  pages={132--178},
+  year={2021}
+}
+</pre></details></br></li>
+               
+               
                <li>Cartea, Á., & Sánchez-Betancourt, L. (2021). The Shadow Price of Latency: Improving Intraday Fill Ratios in Foreign Exchange Markets. 
-               <br><em><u>SIAM Journal on Financial Mathematics</u></em> <b>12</b> (1), 254-294.  <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3190961">Link</a>.</br></li>
+               <br><em><u>SIAM Journal on Financial Mathematics</u></em> <b>12</b> (1), 254-294.  
+               <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3190961" style="color:#000"><i class="fas fa-link"></i></a>
+<details class="bibtex"><summary><i class="far fa-plus-square"></i><i class="far fa-minus-square"></i></summary><pre>
+@article{cartea2021shadow,
+  title={The shadow price of latency: Improving intraday fill ratios in foreign exchange markets},
+  author={Cartea, {\'A}lvaro and S{\'a}nchez-Betancourt, Leandro},
+  journal={SIAM Journal on Financial Mathematics},
+  volume={12},
+  number={1},
+  pages={254--294},
+  year={2021},
+  publisher={SIAM}
+}
+</pre></details></br></li>
+               
+               
                <li>Hughston, L. P., & Sánchez-Betancourt, L. (2020). Pricing with Variance Gamma Information. 
-               <br><em><u>Risks</u></em> <b>8</b> (4), 105. <a href="https://www.mdpi.com/2227-9091/8/4/105">Link</a></br></li>
+               <br><em><u>Risks</u></em> <b>8</b> (4), 105. 
+               <a href="https://www.mdpi.com/2227-9091/8/4/105" style="color:#000"><i class="fas fa-link"></i></a>
+<details class="bibtex"><summary><i class="far fa-plus-square"></i><i class="far fa-minus-square"></i></summary><pre>
+@article{hughston2020pricing,
+  title={Pricing with variance gamma information},
+  author={Hughston, Lane P and S{\'a}nchez-Betancourt, Leandro},
+  journal={Risks},
+  volume={8},
+  number={4},
+  pages={105},
+  year={2020},
+  publisher={MDPI}
+}
+</pre></details></br></li>
+
+
+
+
             </ol>
 
             <h5>Conference/workshop papers and book chapters</h5>
 
             <ol reversed>
-                  <li> Duran-Martin, G., Sánchez-Betancourt, L., Cartea, Á., & Murphy, K. P. (2025). Scalable Generalized Bayesian Online Neural Network Training for Sequential Decision Making. 
-                  <br><em><u>Conference on Neural Information Processing Systems</u></em> (Neurips), San Diego & Mexico City, 2025. <a href="https://arxiv.org/abs/2506.11898">Link</a>.  </br> </li>
+                  <li> Duran-Martin, G., Sánchez-Betancourt, L., Cartea, Á., & Murphy, K. P. (2025). Martingale Posterior Neural Networks for Fast Sequential Decision Making. 
+                  <br><em><u>Conference on Neural Information Processing Systems</u></em> (Neurips), San Diego & Mexico City, 2025. 
+                  <a href="https://arxiv.org/abs/2506.11898" style="color:#000"><i class="fas fa-link"></i></a> 
+                  <a href="https://github.com/gerdm/martingale-posterior-neural-networks" style="color:#000"><i class="fab fa-github"></i></a>
+<details class="bibtex"><summary><i class="far fa-plus-square"></i><i class="far fa-minus-square"></i></summary><pre>
+@inproceedings{duranmartingale,
+  title={Martingale Posterior Neural Networks for Fast Sequential Decision Making},
+  author={Duran-Martin, Gerardo and S{\'a}nchez-Betancourt, Leandro and Cartea, Alvaro and Murphy, Kevin Patrick},
+  booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
+  year={2025}
+}
+</pre></details></br></li>                 
+                  
                   <li>Kang, L., Cucuringu, M., Sánchez-Betancourt, L., & Willi T. (2024).  Mixtures of Experts for Scaling up Neural Networks in Order Execution. 
-                  <br><em><u>5th ACM International Conference on AI in Finance</u></em> (ICAIF), New York, USA, 2024. <a href="https://dl.acm.org/doi/10.1145/3677052.3698691">Link</a>.</br>  </li>
+                  <br><em><u>5th ACM International Conference on AI in Finance</u></em> (ICAIF), New York, USA, 2024. 
+                  <a href="https://dl.acm.org/doi/10.1145/3677052.3698691" style="color:#000"><i class="fas fa-link"></i></a>
+<details class="bibtex"><summary><i class="far fa-plus-square"></i><i class="far fa-minus-square"></i></summary><pre>
+@inproceedings{li2024mixtures,
+  title={Mixtures of experts for scaling up neural networks in order execution},
+  author={Li, Kang and Cucuringu, Mihai and S{\'a}nchez-Betancourt, Leandro and Willi, Timon},
+  booktitle={Proceedings of the 5th ACM International Conference on AI in Finance},
+  pages={669--676},
+  year={2024}
+}
+</pre></details></br></li> 
+                  
+                  
                   <li>Bogdan, A., Sánchez-Betancourt, L., Sarkadi, S., & Ventre C. (2024).  Detecting Collective Liquidity Taking Distributions. 
-                  <br><em><u>5th ACM International Conference on AI in Finance</u></em> (ICAIF), New York, USA, 2024. <a href="https://dl.acm.org/doi/10.1145/3677052.3698643">Link</a>. </br></li>
+                  <br><em><u>5th ACM International Conference on AI in Finance</u></em> (ICAIF), New York, USA, 2024. 
+                  <a href="https://dl.acm.org/doi/10.1145/3677052.3698643" style="color:#000"><i class="fas fa-link"></i></a>
+<details class="bibtex"><summary><i class="far fa-plus-square"></i><i class="far fa-minus-square"></i></summary><pre>
+@inproceedings{balcau2024detecting,
+  title={Detecting Collective Liquidity Taking Distributions},
+  author={Balcau, Andrei-Bogdan and S{\'a}nchez-Betancourt, Leandro and Sarkadi, Stefan and Ventre, Carmine},
+  booktitle={Proceedings of the 5th ACM International Conference on AI in Finance},
+  pages={504--512},
+  year={2024}
+}
+</pre></details></br></li> 
+                  
+                  
                   <li> Duran-Martin, G., Altamirano, M., Shestopaloff, A., Sánchez-Betancourt, L., Knoblauch, J., Jones, M., Briol, F-X., & Murphy, K. P. (2024). Outlier-robust Kalman Filtering through Generalised Bayes. 
-                  <br><em><u>International Conference on Machine Learning</u></em> (ICML), Viena, Austria, 2024. <a href="https://arxiv.org/abs/2405.05646">Link</a>.  </br> </li>   
+                  <br><em><u>International Conference on Machine Learning</u></em> (ICML), Viena, Austria, 2024. 
+                  <a href="https://arxiv.org/abs/2405.05646" style="color:#000"><i class="fas fa-link"></i></a>
+                  <a href="https://github.com/gerdm/weighted-likelihood-filter" style="color:#000"><i class="fab fa-github"></i></a>
+<details class="bibtex"><summary><i class="far fa-plus-square"></i><i class="far fa-minus-square"></i></summary><pre>
+@inproceedings{duran2024outlier,
+  title={Outlier-robust Kalman Filtering through Generalised Bayes},
+  author={Duran-Martin, Gerardo and Altamirano, Matias and Shestopaloff, Alex and S{\'a}nchez-Betancourt, Leandro and Knoblauch, Jeremias and Jones, Matt and Briol, Francois-Xavier and Murphy, Kevin Patrick},
+  booktitle={International Conference on Machine Learning},
+  pages={12138--12171},
+  year={2024},
+  organization={PMLR}
+}
+</pre></details></br></li> 
+                  
+                  
                   <li>Jerome, J., Sánchez-Betancourt, L., Savani, R., & Herdegen, M.  (2023).  Model-based gym environments for limit order book trading. 
-                  <br><em><u>4th ACM International Conference on AI in Finance</u></em> (ICAIF), New York, USA, 2023. <a href="https://arxiv.org/abs/2209.07823">Link</a>.  <a href="https://github.com/JJJerome/mbt_gym">Code</a>. </br></li>
+                  <br><em><u>4th ACM International Conference on AI in Finance</u></em> (ICAIF), New York, USA, 2023. 
+                  <a href="https://arxiv.org/abs/2209.07823"
+                  style="color:#000"><i class="fas fa-link"></i></a>
+               <a href="https://github.com/JJJerome/mbt_gym" style="color:#000"><i class="fab fa-github"></i></a>
+<details class="bibtex"><summary><i class="far fa-plus-square"></i><i class="far fa-minus-square"></i></summary><pre>
+@inproceedings{jerome2023mbt,
+  title={Mbt-gym: Reinforcement learning for model-based limit order book trading},
+  author={Jerome, Joseph and S{\'a}nchez-Betancourt, Leandro and Savani, Rahul and Herdegen, Martin},
+  booktitle={Proceedings of the Fourth ACM International Conference on AI in Finance},
+  pages={619--627},
+  year={2023}
+}
+</pre></details></br></li> 
+                  
+                  
                   <li>Höglund, M., Ferrucci, E., Hernández, C.,  Muguruza Gonzalez, A., Salvi, C., Sánchez-Betancourt, L., & Zhang, Y.  (2023).  A Neural RDE approach for continuous-time non-Markovian stochastic control problems. 
-                  <br><em><u>New Frontiers in Learning, Control, and Dynamical Systems</u></em> at the <em><u>International Conference on Machine Learning</u></em> (ICML), Honolulu, Hawaii, USA, 2023. <a href="https://arxiv.org/abs/2306.14258">Link</a>.  </br> </li>   
+                  <br><em><u>New Frontiers in Learning, Control, and Dynamical Systems</u></em> at the <em><u>International Conference on Machine Learning</u></em> (ICML), Honolulu, Hawaii, USA, 2023. 
+                  <a href="https://arxiv.org/abs/2306.14258" style="color:#000"><i class="fas fa-link"></i></a>
+<details class="bibtex"><summary><i class="far fa-plus-square"></i><i class="far fa-minus-square"></i></summary><pre>
+@inproceedings{hoglundneural,
+  title={A neural RDE approach for continuous-time non-Markovian stochastic control problems},
+  author={H{\"o}glund, Melker and Ferrucci, Emilio and Hern{\'a}ndez, Camilo and Gonzalez, Aitor Muguruza and Salvi, Cristopher and S{\'a}nchez-Betancourt, Leandro and Zhang, Yufei},
+  year={2023},
+  booktitle={ICML Workshop on New Frontiers in Learning, Control, and Dynamical Systems}
+}
+</pre></details></br></li> 
+                  
+                  
                   <li>Cartea, Á., Jaimungal, S., & Sánchez-Betancourt, L. (2023). <em>Reinforcement Learning for Algorithmic Trading.</em> 
-                  <br><em><u>Machine Learning and Data Sciences for Financial Markets: A guide to contemporary practices</u></em>. Edited by C.-A. Lehalle and A. Capponi. Cambridge University Press.  <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3812473">Link</a>. </br></li>
+                  <br><em><u>Machine Learning and Data Sciences for Financial Markets: A guide to contemporary practices</u></em>. Edited by C.-A. Lehalle and A. Capponi. Cambridge University Press.  
+                  <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3812473"
+                  style="color:#000"><i class="fas fa-link"></i></a>
+<details class="bibtex"><summary><i class="far fa-plus-square"></i><i class="far fa-minus-square"></i></summary><pre>
+@incollection{cartea2023reinforcement,
+  author = {Cartea, {\'A}lvaro and Jaimungal, Sebastian and S{\'a}nchez-Betancourt, Leandro},
+  title = {Reinforcement Learning for Algorithmic Trading},
+  editor = {Charles-Albert Lehalle and Agostino Capponi},
+  booktitle = {Machine Learning and Data Sciences for Financial Markets: A Guide to Contemporary Practices},
+  publisher = {Cambridge University Press},
+  year = {2023}
+}
+</pre></details></br></li> 
+
             </ol>
 
             <h5>Submitted for publication / working papers</h5>
 
             <ul>
-                  <li> Chilenje, N., Daba, M., Feleppa, D., Fellner, C., Sánchez-Betancourt, L. (2025). Market Making with Competition: a Stackelberg Equilibrium. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5505480">Link</a>.   </li>
-                  <li> Bergault, P., Bieber, S., Sánchez-Betancourt, L. (2025). Optimal Exit Time for Liquidity Providers in Automated Market Makers. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5456614">Link</a>.   </li>
-                  <li> Baggiani, L., Herdegen, M., Sánchez-Betancourt, L. (2025). Optimal Dynamic Fees in Automated Market Makers. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5278863">Link</a>.   </li>
-                  <li> Aqsha, A., Bergault, P., Sánchez-Betancourt, L. (2025). Equilibrium Reward for Liquidity Providers in Automated Market Makers. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5197060">Link</a>.   </li>
-                  <li>Cartea, Á., & Sánchez-Betancourt, L. (2025).  A Simple Strategy to Deal with Toxic Flow. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5190189">Link</a>.   </li>    
-                  <li>Barucci, E., Mathieu, A., & Sánchez-Betancourt, L. (2025).  Market Making with Fads, Informed, and Uninformed Traders. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5085589">Link</a>.   </li>    
-                  <li>Cartea, Á., Bhudisaksang, T., & Sánchez-Betancourt, L. (2025).  Adaptive-Robust Portfolio Optimisation. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5082206">Link</a>.   </li>    
-                  <li> Aqsha, A., Drissi, F., Sánchez-Betancourt, L. (2024). Strategic Learning and Trading in Broker-Mediated Markets. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5070540">Link</a>.   </li>
-                  <li>Cartea, Á., Drissi, F., Sánchez-Betancourt, L., Siska, D., & Szpruch, L. (2024).  Strategic Bonding Curves in Automated Market Makers. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5018420">Link</a>. <a href="https://github.com/leandro-sbetancourt/amm_gym">Code</a>.   </li>         
-                  <li>Cohen, S. N., Sánchez-Betancourt, L., & Szpruch, L. (2023).  The Economics of Interest Rate Models in Decentralised Lending Protocols. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4638390">Link</a>.   </li>
-                  <li>Cartea, Á., Duran-Martin, G., & Sánchez-Betancourt, L. (2023).  Detecting Toxic Flow. <a href="https://ssrn.com/abstract=4597879">Link</a>.   </li>    
+                  <li> Chilenje, N., Daba, M., Feleppa, D., Fellner, C., Sánchez-Betancourt, L. (2025). Market Making with Competition: a Stackelberg Equilibrium. 
+                  <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5505480" style="color:#000"><i class="fas fa-link"></i></a>
+                  
+                  <li> Bergault, P., Bieber, S., Sánchez-Betancourt, L. (2025). Optimal Exit Time for Liquidity Providers in Automated Market Makers. 
+                  <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5456614" style="color:#000"><i class="fas fa-link"></i></a>
+                  
+                  <li> Baggiani, L., Herdegen, M., Sánchez-Betancourt, L. (2025). Optimal Dynamic Fees in Automated Market Makers. 
+                  <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5278863" style="color:#000"><i class="fas fa-link"></i></a>
+                  
+                  <li> Aqsha, A., Bergault, P., Sánchez-Betancourt, L. (2025). Equilibrium Reward for Liquidity Providers in Automated Market Makers. 
+                  <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5197060" style="color:#000"><i class="fas fa-link"></i></a>
+                                  
+                  <li>Cartea, Á., & Sánchez-Betancourt, L. (2025).  A Simple Strategy to Deal with Toxic Flow. 
+                  <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5190189" style="color:#000"><i class="fas fa-link"></i></a>
+                  
+                  <li>Barucci, E., Mathieu, A., & Sánchez-Betancourt, L. (2025).  Market Making with Fads, Informed, and Uninformed Traders. 
+                  <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5085589" style="color:#000"><i class="fas fa-link"></i></a>
+                  
+                  <li>Cartea, Á., Bhudisaksang, T., & Sánchez-Betancourt, L. (2025).  Adaptive-Robust Portfolio Optimisation. 
+                  <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5082206" style="color:#000"><i class="fas fa-link"></i></a>
+                  
+                  <li> Aqsha, A., Drissi, F., Sánchez-Betancourt, L. (2024). Strategic Learning and Trading in Broker-Mediated Markets. 
+                  <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5070540" style="color:#000"><i class="fas fa-link"></i></a>
+                  <a href="https://github.com/muhammadalifaqsha/broker_informed_noise_filtering_game" style="color:#000"><i class="fab fa-github"></i></a>
+                  
+                  <li>Cartea, Á., Drissi, F., Sánchez-Betancourt, L., Siska, D., & Szpruch, L. (2024).  Strategic Bonding Curves in Automated Market Makers. 
+                  <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5018420" style="color:#000"><i class="fas fa-link"></i></a>
+                  <a href="https://github.com/leandro-sbetancourt/amm_gym" style="color:#000"><i class="fab fa-github"></i></a>
+                  
+                  <li>Cohen, S. N., Sánchez-Betancourt, L., & Szpruch, L. (2023).  The Economics of Interest Rate Models in Decentralised Lending Protocols. 
+                  <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4638390" style="color:#000"><i class="fas fa-link"></i></a>
+                  
+                  <li>Cartea, Á., Duran-Martin, G., & Sánchez-Betancourt, L. (2023).  Detecting Toxic Flow. 
+                  <a href="https://ssrn.com/abstract=4597879" style="color:#000"><i class="fas fa-link"></i></a>
+                  
             </ul>
 
             
             <h5>DPhil Thesis</h5>
 
             <ul>
-                  <li>Sánchez-Betancourt, L. (2021). Uncertain Execution in Order-driven Markets. PhD Thesis, University of Oxford. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3871298">Link</a>.</li>
+                  <li>Sánchez-Betancourt, L. (2021). Uncertain Execution in Order-driven Markets. PhD Thesis, University of Oxford. 
+                  <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3871298" style="color:#000"><i class="fas fa-link"></i></a>
+                  <details class="bibtex"><summary><i class="far fa-plus-square"></i><i class="far fa-minus-square"></i></summary><pre>
+@phdthesis{sanchez2021uncertain,
+  author = {S{\'a}nchez-Betancourt, Leandro},
+  title={Uncertain execution in order-driven markets},
+  year={2021},
+  school={University of Oxford}
+}
+</pre></details></li> 
             </ul>
 
 
@@ -150,7 +549,7 @@
             <h5>Working projects</h5>
 
             <ul>
-               <li> There are a number of projects that I am pursuing in collaboration with other researchers. Some of the topics we are currently exploring are: (i) internalisation and externalisation of toxic flow, (ii) market simulators, (iii) classification of agents, and (iv) benchmarks for algorithmic trading strategies. If you are interested in collaborating please let me know. </li>
+               <li> There are a number of projects that I am pursuing in collaboration with other researchers. Some of the topics we are currently exploring are: (i) internalisation and externalisation of toxic flow, (ii) market simulators, (iii) stochastic games in algorithmic trading, and (iv) automated market makers. If you are interested in collaborating please let me know. </li>
             </ul>
 
             
@@ -162,7 +561,7 @@
    </div>
 
    <!-- Back-to-top button -->
-   <a role="button" id="topper" data-toggle="tooltip" data-placement="top" title="Top" class="btn scroll-link" href="#top"><i class="fa fa-fw fa-2x fa-caret-up" aria-hidden="true"></i></a>
+   <a role="button" id="topper" data-toggle="tooltip" data-placement="top" title="Top" class="btn scroll-link" href="#top"><i class="fa fa-fw fa-2x fa-caret-up"></i></a>
 
    <!-- footer include -->
    <div w3-include-html="footer.html"></div>
